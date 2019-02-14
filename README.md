@@ -24,6 +24,7 @@ Further work is needed to organize this list and differentiate them by functiona
 
 Demo: https://aframe-360-video-example.glitch.me/
 
+
 ```html
 <!-- Specify our scene. -->
 <a-scene>
@@ -47,6 +48,8 @@ Demo: https://aframe-360-video-example.glitch.me/
   </a-assets>
 </a-scene>
 ```
+
+Source: https://glitch.com/~aframe-360-video-example
 
 ## Mandates
 ### From MPEG #125
