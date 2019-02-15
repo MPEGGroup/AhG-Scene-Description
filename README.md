@@ -31,14 +31,14 @@ Syntax:
 ```html
 <!-- Description of the scene -->
 <a-scene>
-  <!-- The scene has one asset wich is the 360 ERP background video -->
+  <!-- The scene has one asset which is the 360 ERP background video -->
   <a-assets>
     <video id="videoBackground" autoplay loop crossorigin="anonymous">
       <source src="https://ucarecdn.com/fadab25d-0b3a-45f7-8ef5-85318e92a261/"></source>
     </video>
   </a-assets>
 
-  <!-- The scene has one shpere as background and the texture links to the declared video asset -->
+  <!-- The scene has one sphere as background and the texture links to the declared video asset -->
   <a-videosphere src="#videoBackground" rotation="0 180 0"></a-videosphere>
 </a-scene>
 ```
@@ -55,7 +55,7 @@ Syntax:
 ```html
 <!-- Description of the scene -->
 <a-scene>
-  <!-- The scene has one asset wich is the 360 ERP background video -->
+  <!-- The scene has one asset which is the 360 ERP background video -->
   <a-assets>
     <video id="video" autoplay loop crossorigin="anonymous" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
     </video>
