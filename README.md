@@ -55,7 +55,7 @@ Syntax:
 ```html
 <!-- Description of the scene -->
 <a-scene>
-  <!-- The scene has one asset which is the 360 ERP background video -->
+  <!-- The scene has one asset which is a 2D video -->
   <a-assets>
     <video id="video" autoplay loop crossorigin="anonymous" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
     </video>
