@@ -9,7 +9,8 @@ tools and application in the context of the AhG on Scene Description.
 These is an unsorted list of tools, libraries and specifications relevant to the topic of scene descriptions.
 Further work is needed to organize this list and differentiate them by functionalities.
 
-- [W3C Immersvive Web](https://immersive-web.github.io/webxr/)
+- [W3C Immersvive Web](https://www.w3.org/immersive-web/)
+- [WebXR](https://immersive-web.github.io/webxr/)
 - [Open Scene Graph](http://www.openscenegraph.org/)
 - [A-Frame](https://aframe.io/)
 - [babylon.JS](https://www.babylonjs.com/)
@@ -22,8 +23,8 @@ Further work is needed to organize this list and differentiate them by functiona
 
 #### A-Frame
 
-[Demo](https://mpeggroup.github.io/AhG-Scene-Description/360_video_background/aframe-mp4.html)
-[Code](https://github.com/MPEGGroup/AhG-Scene-Description/blob/master/360_video_background/aframe-mp4.html)
+[Demo](https://mpeggroup.github.io/AhG-Scene-Description/examples/360_video_background/aframe-mp4.html)
+[Code](https://github.com/MPEGGroup/AhG-Scene-Description/blob/master/examples/360_video_background/aframe-mp4.html)
 
 Syntax:
 
@@ -46,8 +47,8 @@ Syntax:
 
 #### A-Frame
 
-[Demo](https://mpeggroup.github.io/AhG-Scene-Description/2D_video_texture/aframe-mp4.html)
-[Code](https://github.com/MPEGGroup/AhG-Scene-Description/blob/master/2D_video_texture/aframe-mp4.html)
+[Demo](https://mpeggroup.github.io/AhG-Scene-Description/examples/2D_video_texture/aframe-mp4.html)
+[Code](https://github.com/MPEGGroup/AhG-Scene-Description/blob/master/examples/2D_video_texture/aframe-mp4.html)
 
 Syntax:
 
