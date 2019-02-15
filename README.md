@@ -9,12 +9,12 @@ tools and application in the context of the AhG on Scene Description.
 These is an unsorted list of tools, libraries and specifications relevant to the topic of scene descriptions.
 Further work is needed to organize this list and differentiate them by functionalities.
 
-- https://immersive-web.github.io/webxr/
-- http://www.openscenegraph.org/
-- https://aframe.io/
-- https://www.babylonjs.com/
-- https://threejs.org/
-- https://aws.amazon.com/sumerian/
+- [W3C Immersvive Web](https://immersive-web.github.io/webxr/)
+- [Open Scene Graph](http://www.openscenegraph.org/)
+- [A-Frame](https://aframe.io/)
+- [babylon.JS](https://www.babylonjs.com/)
+- [three.js](https://threejs.org/)
+- [Amazon Sumerian](https://aws.amazon.com/sumerian/)
 
 ## Examples
 
@@ -22,34 +22,48 @@ Further work is needed to organize this list and differentiate them by functiona
 
 #### A-Frame
 
-Demo: https://aframe-360-video-example.glitch.me/
+[Demo](https://mpeggroup.github.io/AhG-Scene-Description/360_video_background/aframe-mp4.html)
+[Code](https://github.com/MPEGGroup/AhG-Scene-Description/blob/master/360_video_background/aframe-mp4.html)
 
+Syntax:
 
 ```html
-<!-- Specify our scene. -->
+<!-- Description of the scene -->
 <a-scene>
-  <!-- The original example also has this 180 degree rotation, to appear to be going forward. -->
-  <a-videosphere rotation="0 180 0" src="#video" 
-                 play-on-window-click
-                 play-on-vrdisplayactivate-or-enter-vr>
-  </a-videosphere>
-  
-  ...
-
-  <!-- Wait for the video to load. -->
+  <!-- The scene has one asset wich is the 360 ERP background video -->
   <a-assets>
-    <!-- Single source video. -->
-    <video id="video" style="display:none" 
-           autoplay loop crossorigin="anonymous" playsinline webkit-playsinline>
-      <!-- MP4 video source. -->
-      <source type="video/mp4"
-           src="https://ucarecdn.com/fadab25d-0b3a-45f7-8ef5-85318e92a261/" />
+    <video id="videoBackground" autoplay loop crossorigin="anonymous">
+      <source src="https://ucarecdn.com/fadab25d-0b3a-45f7-8ef5-85318e92a261/"></source>
     </video>
   </a-assets>
+
+  <!-- The scene has one shpere as background and the texture links to the declared video asset -->
+  <a-videosphere src="#videoBackground" rotation="0 180 0"></a-videosphere>
 </a-scene>
 ```
 
-Source: https://glitch.com/~aframe-360-video-example
+### 2D video texture
+
+#### A-Frame
+
+[Demo](https://mpeggroup.github.io/AhG-Scene-Description/2D_video_texture/aframe-mp4.html)
+[Code](https://github.com/MPEGGroup/AhG-Scene-Description/blob/master/2D_video_texture/aframe-mp4.html)
+
+Syntax:
+
+```html
+<!-- Description of the scene -->
+<a-scene>
+  <!-- The scene has one asset wich is the 360 ERP background video -->
+  <a-assets>
+    <video id="video" autoplay loop crossorigin="anonymous" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+    </video>
+  </a-assets>
+  
+  <!-- Declare a plane whose texture is the video frames -->
+  <a-video src="#video" width="16" height="9" position="0 0 -10"></a-video>
+</a-scene>
+```
 
 ## Mandates
 ### From MPEG #125

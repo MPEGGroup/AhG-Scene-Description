@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>360 Video Background | A-Frame</title>
+    <meta name="description" content="360 Video Background (MP4) | A-Frame">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <!-- Description of the scene -->
+    :w
+    <a-scene>
+      <!-- The scene has one asset wich is the 360 ERP background video -->
+      <a-assets>
+        <video id="videoBackground" autoplay loop crossorigin="anonymous">
+          <source src="https://ucarecdn.com/fadab25d-0b3a-45f7-8ef5-85318e92a261/"></source>
+        </video>
+      </a-assets>
+
+      <!-- The scene has one shpere as background and the texture links to the declared video asset -->
+      <a-videosphere src="#videoBackground" rotation="0 180 0"></a-videosphere>
+    </a-scene>
+  </body>
+</html>
