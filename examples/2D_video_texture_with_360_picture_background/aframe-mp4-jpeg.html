@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2D video texture | A-Frame</title>
+    <meta name="description" content="360 Video Background (MP4) | A-Frame">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <!-- Description of the scene -->
+    <a-scene>
+      <!-- Declare a backgound picture of the scene -->
+      <a-sky src="../../assets/SMKver2-0011104.jpg" rotation="0 -130 0"></a-sky>
+      <!-- The scene has one asset which is a 2D video -->
+      <a-assets>
+        <video id="video" autoplay loop crossorigin="anonymous" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+        </video>
+      </a-assets>
+      
+      <!-- Declare a plane whose texture is copied from the video frames -->
+      <a-video src="#video" width="16" height="9" position="9.5 3 -10" rotation="0 -36 -0.5" scale="1.3 1.75 1"></a-video>
+    </a-scene>
+  </body>
+</html>

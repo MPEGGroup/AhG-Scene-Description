@@ -66,6 +66,33 @@ Syntax:
 </a-scene>
 ```
 
+### 2D video texture with a 360 picture background
+
+#### A-Frame
+
+[Demo](https://mpeggroup.github.io/AhG-Scene-Description/examples/2D_video_texture_with_360_picture_background/aframe-mp4-jpeg.html)
+[Code](https://github.com/MPEGGroup/AhG-Scene-Description/blob/master/examples/2D_video_texture_with_360_picture_background/aframe-mp4-jpeg.html)
+
+Syntax:
+
+```html
+<!-- Description of the scene -->
+<a-scene>
+  <!-- Declare a backgound picture of the scene -->
+  <a-sky src="../../assets/SMKver2-0011104.jpg" rotation="0 -130 0"></a-sky>
+  <!-- The scene has one asset which is a 2D video -->
+  <a-assets>
+    <video id="video" autoplay loop crossorigin="anonymous" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+    </video>
+  </a-assets>
+      
+  <!-- Declare a plane whose texture is copied from the video frames -->
+  <a-video src="#video" width="16" height="9" position="9.5 3 -10" rotation="0 -36 -0.5" scale="1.3 1.75 1"></a-video>
+</a-scene>
+```
+
+Credits 360 picture: https://www.flickr.com/photos/peterleth/ [creative commons](https://creativecommons.org/licenses/by/2.0/)
+
 ## Mandates
 ### From MPEG #125
 
