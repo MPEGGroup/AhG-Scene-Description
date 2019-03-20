@@ -13,7 +13,7 @@
       <a-sky src="../../assets/SMKver2-0011104.jpg" rotation="0 -130 0"></a-sky>
       <!-- The scene has one asset which is a 2D video -->
       <a-assets>
-        <video id="video" autoplay loop crossorigin="anonymous" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+        <video id="video" autoplay loop crossorigin="anonymous" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" muted>
         </video>
       </a-assets>
       
@@ -21,4 +21,9 @@
       <a-video src="#video" width="16" height="9" position="9.5 3 -10" rotation="0 -36 -0.5" scale="1.3 1.75 1"></a-video>
     </a-scene>
   </body>
+  <script>
+    document.getElementById("video").oncanplay = function() {
+      this.play();
+    }; 
+  </script>
 </html>
