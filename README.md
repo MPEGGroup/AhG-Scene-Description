@@ -91,6 +91,9 @@ Syntax:
 </a-scene>
 ```
 
+Credits 360 picture: https://www.flickr.com/photos/peterleth/ [creative commons](https://creativecommons.org/licenses/by/2.0/)
+
+
 ### 2D video texture on 3D object
 
 #### A-Frame
@@ -116,8 +119,6 @@ Syntax:
   <a-box src="#video" width="16" height="9" position="0 0 -10"></a-box>
 </a-scene>
 ```
-
-Credits 360 picture: https://www.flickr.com/photos/peterleth/ [creative commons](https://creativecommons.org/licenses/by/2.0/)
 
 ## Mandates
 ### From MPEG #125
