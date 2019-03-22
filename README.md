@@ -89,6 +89,31 @@ Syntax:
   <!-- Declare a plane whose texture is copied from the video frames -->
   <a-video src="#video" width="16" height="9" position="9.5 3 -10" rotation="0 -36 -0.5" scale="1.3 1.75 1"></a-video>
 </a-scene>
+
+### 2D video texture on 3D object
+
+#### A-Frame
+
+[Demo](https://mpeggroup.github.io/AhG-Scene-Description/examples/2D_video_texture_on_3D_object/aframe-mp4.html)
+[Code](https://github.com/MPEGGroup/AhG-Scene-Description/blob/master/examples/2D_video_texture_on_3D_object/aframe-mp4.html)
+
+Syntax:
+
+```html
+<!-- Description of the scene -->
+<a-scene>
+  <!-- The scene has one asset which is a 2D video -->
+  <a-assets>
+    <video id="video" autoplay loop crossorigin="anonymous" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" muted>
+    </video>
+  </a-assets>
+      
+  <!-- Declare a backgound colour of the scene (optional, just to have a better constrast with the video) -->
+  <a-sky color="#6EBAA7"></a-sky>
+      
+  <!-- Declare a box whose texture is copied from the video frames -->
+  <a-box src="#video" width="16" height="9" position="0 0 -10"></a-box>
+</a-scene>
 ```
 
 Credits 360 picture: https://www.flickr.com/photos/peterleth/ [creative commons](https://creativecommons.org/licenses/by/2.0/)
