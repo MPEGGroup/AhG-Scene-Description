@@ -78,7 +78,7 @@ Syntax:
 ```html
 <!-- Description of the scene -->
 <a-scene>
-  <!-- Declare a backgound picture of the scene -->
+  <!-- Declare a background picture of the scene -->
   <a-sky src="../../assets/SMKver2-0011104.jpg" rotation="0 -130 0"></a-sky>
   <!-- The scene has one asset which is a 2D video -->
   <a-assets>
@@ -112,11 +112,11 @@ Syntax:
     </video>
   </a-assets>
       
-  <!-- Declare a backgound colour of the scene (optional, just to have a better constrast with the video) -->
+  <!-- Declare a background colour of the scene (optional, just to have a better constrast with the video) -->
   <a-sky color="#6EBAA7"></a-sky>
       
   <!-- Declare a box whose texture is copied from the video frames -->
-  <a-box src="#video" width="16" height="9" position="0 0 -10"></a-box>
+  <a-box src="#video"></a-box>
 </a-scene>
 ```
 
