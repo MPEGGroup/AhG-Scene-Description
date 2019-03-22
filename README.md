@@ -89,6 +89,7 @@ Syntax:
   <!-- Declare a plane whose texture is copied from the video frames -->
   <a-video src="#video" width="16" height="9" position="9.5 3 -10" rotation="0 -36 -0.5" scale="1.3 1.75 1"></a-video>
 </a-scene>
+```
 
 ### 2D video texture on 3D object
 
