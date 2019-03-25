@@ -120,6 +120,14 @@ Syntax:
 </a-scene>
 ```
 
+### 3D TV room with 2D video
+
+#### A-Frame
+
+[Demo](https://mpeggroup.github.io/AhG-Scene-Description/examples/3DObjectTexture/3dobject.html)
+[Code](https://github.com/MPEGGroup/AhG-Scene-Description/blob/master/examples/3DObjectTexture/3dobject.html)
+
+
 ## Mandates
 ### From MPEG #125
 
