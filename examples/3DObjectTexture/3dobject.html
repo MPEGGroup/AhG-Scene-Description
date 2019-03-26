@@ -8,7 +8,7 @@
 			// Wait for model to load.
 			this.el.addEventListener('model-loaded', () => {
 				// Grab the mesh / scene.
-				const obj = this.el.getObject3D('TVStand');
+				const obj = this.el.getObject3D('3dgltf');
 				// Go over the submeshes and modify materials we want.
 				obj.traverse(node => {
 					if (node.name.indexOf('blinn4') !== -1) {
