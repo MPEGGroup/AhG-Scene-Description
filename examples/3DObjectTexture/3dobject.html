@@ -12,7 +12,10 @@
 				// Go over the submeshes and modify materials we want.
 				obj.traverse(node => {
 					if (node.name.indexOf('pCube1') !== -1) {
-						node.material.src.set('#bbb');
+						node.children[1].material.src.set('#bbb');
+						node.children[3].material.src.set('#bbb');
+						node.children[5].material.src.set('#bbb');
+						node.children[7].material.src.set('#bbb');
 					}
 				});
 			});
