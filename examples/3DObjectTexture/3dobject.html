@@ -11,7 +11,7 @@
 				const obj = this.el.getObject3D('material');
 				// Go over the submeshes and modify materials we want.
 				obj.traverse(node => {
-					if (node.name.indexOf('blinn4') !== -1) {
+					if (node.name.indexOf('pCube1') !== -1) {
 						node.material.src.set('#bbb');
 					}
 				});
