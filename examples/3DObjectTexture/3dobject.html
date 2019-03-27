@@ -12,10 +12,11 @@
 				// Go over the submeshes and modify materials we want.
 				obj.traverse(node => {
 					if (node.name.indexOf('pCube1') !== -1) {
-						node.children[1].material.map = '#bbb';
-						node.children[3].material.map = '#bbb';
-						node.children[5].material.map = '#bbb';
-						node.children[7].material.map = '#bbb';
+						var material = new THREE.MeshPhongMaterial({'map':'#bbb'});
+						node.children[1].material = material;
+						node.children[3].material = material;
+						node.children[5].material = material;
+						node.children[7].material = material;
 					}
 				});
 			});
