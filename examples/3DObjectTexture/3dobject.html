@@ -12,7 +12,7 @@
 				// Go over the submeshes and modify materials we want.
 				obj.traverse(node => {
 					if (node.name.indexOf('pCube1') !== -1) {
-						var texture = new THREE.VideoTexture( document.getElementById('bbb'); );
+						var texture = new THREE.VideoTexture( document.getElementById('bbb') );
 						var material = new THREE.MeshStandardMaterial({'map':texture});
 						node.children[1].material = material;
 						//node.children[3].material = material;
