@@ -11,15 +11,13 @@
     <a-scene>
       <!-- The scene has one asset which is a 2D video -->
       <a-assets>
-        <video id="video" autoplay loop crossorigin="anonymous" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" muted>
+        <video id="video" autoplay loop crossorigin="anonymous" src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/NIHmZbghlilb1qj7b/videoblocks-vr-360-camera-moving-above-desert-ready-for-use-in-vr360-virtual-reality_rP1SCrOLz__WM.mp4" muted>
         </video>
       </a-assets>
       
       <!-- Declare a backgound colour of the scene (optional, just to have a better constrast with the video) -->
-      <a-sky color="#6EBAA7"></a-sky>
+      <a-sky src="#video"></a-sky>
       
-      <!-- Declare a plane whose texture is copied from the video frames -->
-      <a-video src="#video" width="16" height="9" position="0 0 -10"></a-video>
     </a-scene>
   </body>
   <script>
